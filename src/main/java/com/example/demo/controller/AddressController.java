@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Address;
-import com.example.demo.model.Library;
 import com.example.demo.repository.AddressRepository;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +16,7 @@ public class AddressController {
     }
 
     @GetMapping("/addresses")
-    List<Address> all() {
+    List<Address> findAllAddress() {
         return addressRepository.findAll();
     }
 
@@ -28,7 +27,7 @@ public class AddressController {
     }
 
     @PostMapping("/addresses")
-    Address newAddress(@RequestBody Address newAddress) {
+    Address createAddress(@RequestBody Address newAddress) {
         return addressRepository.save(newAddress);
     }
 

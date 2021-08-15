@@ -27,13 +27,13 @@ public class LibraryController {
     }
 
     @GetMapping("/libraries/{id}")
-    Library one(@PathVariable Long id) {
+    Library findLibraryById(@PathVariable Long id) {
         return libraryRepository.findById(id)
                 .orElseThrow(RuntimeException::new);
     }
 
     @PostMapping("/libraries")
-    Library newLibrary(@RequestBody Library newLibrary) {
+    Library createLibrary(@RequestBody Library newLibrary) {
         return libraryRepository.save(newLibrary);
     }
 
