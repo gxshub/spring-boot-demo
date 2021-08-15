@@ -1,21 +1,38 @@
 # spring-boot-demo
 
-### REQUEST 1
+### Sample Rest Requests
+- Request 1. 
+```bash
 curl -X POST -H "Content-Type:application/json" -d '{"name":"My Library"}' http://localhost:8080/libraries
-#### RETURN
+```
+which returns
+```json
 {"id":1,"name":"My Library"}
+```
 
-### REQUEST 2
+- Request 2.
+```bash
 curl -X POST -H "Content-Type:application/json" -d '{"location":"Main Street nr 5"}' http://localhost:8080/addresses
-#### RETURN
+```
+which returns 
+```json
 {"id":2,"location":"Main Street nr 5","library":null}
+```
 
-### REQUEST 3
+- Request 3.
+```bash
 curl -i -X PUT http://localhost:8080/libraries/1/address/2
-#### RETURN
+```
+which returns
+```json
 {"id":1,"name":"My Library"}
+```
 
-### REQUEST 4
+- Request 4
+```bash
 curl -X GET http://localhost:8080/addresses/2
-#### RETURN
+```
+which returns
+```json
 {"id":2,"location":"Main Street nr 5","library":{"id":1,"name":"My Library"}}
+```
