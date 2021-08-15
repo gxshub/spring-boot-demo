@@ -1,6 +1,6 @@
-# spring-boot-demo
+# Spring Boot Demo
 
-### Sample Rest Requests
+### Sample REST Requests
 - Request 1. 
 ```bash
 curl -X POST -H "Content-Type:application/json" -d '{"name":"My Library"}' http://localhost:8080/libraries
