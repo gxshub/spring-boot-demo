@@ -12,6 +12,8 @@ public class Address {
     @Column(nullable = false)
     private String location;
 
+    // this one-to-one relationship
+    // is bidirectional
     @OneToOne(mappedBy = "address")
     private Library library;
 

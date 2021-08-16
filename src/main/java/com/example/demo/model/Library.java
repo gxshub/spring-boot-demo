@@ -14,6 +14,9 @@ public class Library {
     @Column
     private String name;
 
+    // build a one-to-one relationship between
+    // library and address
+    // other relationships: @ManyToOne, @OneToMany
     @OneToOne
     @JoinColumn(name = "address_id")
     @JsonIgnore
