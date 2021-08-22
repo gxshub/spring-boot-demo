@@ -38,7 +38,8 @@ which returns
 ```json
 {"id":2,"location":"Main Street nr 5","library":{"id":1,"name":"My Library"}}
 ```
+### Windows CMD
 In Windows, you need to escape additional single or double quotes with a backslash; for example:
 ```bash
-curl -X POST -H "Content-Type:application/json"  -d "{\"name\":\"My Library\"}" http://localhost:8080/libraries
+curl -X POST -H "Content-Type:application/json" -d "{\"name\":\"My Library\"}" http://localhost:8080/libraries
 ```
