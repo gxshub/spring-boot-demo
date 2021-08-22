@@ -30,11 +30,15 @@ which returns
 {"id":1,"name":"My Library"}
 ```
 
-- Request 4
+- Request 4.
 ```bash
 curl -X GET http://localhost:8080/addresses/2
 ```
 which returns
 ```json
 {"id":2,"location":"Main Street nr 5","library":{"id":1,"name":"My Library"}}
+```
+In Windows, you need to escape additional single or double quotes with a backslash; for example:
+```bash
+curl -X POST -H "Content-Type:application/json"  -d "{\"name\":\"My Library\"}" http://localhost:8080/libraries
 ```
