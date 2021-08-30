@@ -1,4 +1,4 @@
-# Spring Boot Demo
+# Spring Boot REST Service and Entity Relationship
 
 This simple project shows an implementation of a one-to-one relationship between two entity classes in Spring Boot.
 
