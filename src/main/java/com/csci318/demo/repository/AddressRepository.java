@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.csci318.demo.repository;
 
-import com.example.demo.model.Address;
+import com.csci318.demo.model.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AddressRepository extends JpaRepository<Address, Long> {
