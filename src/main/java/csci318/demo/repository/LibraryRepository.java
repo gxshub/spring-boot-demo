@@ -1,6 +1,6 @@
-package csci318demo.repository;
+package csci318.demo.repository;
 
-import csci318demo.model.Library;
+import csci318.demo.model.Library;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LibraryRepository extends JpaRepository<Library, Long> {

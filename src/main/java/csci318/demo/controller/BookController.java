@@ -1,7 +1,7 @@
-package csci318demo.controller;
+package csci318.demo.controller;
 
-import csci318demo.model.Book;
-import csci318demo.repository.BookRepository;
+import csci318.demo.model.Book;
+import csci318.demo.repository.BookRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

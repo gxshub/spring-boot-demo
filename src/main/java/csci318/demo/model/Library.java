@@ -1,4 +1,4 @@
-package csci318demo.model;
+package csci318.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
