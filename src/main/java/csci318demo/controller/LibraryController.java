@@ -1,9 +1,9 @@
-package com.csci318.demo.controller;
+package csci318demo.controller;
 
-import com.csci318.demo.model.Address;
-import com.csci318.demo.model.Library;
-import com.csci318.demo.repository.AddressRepository;
-import com.csci318.demo.repository.LibraryRepository;
+import csci318demo.model.Address;
+import csci318demo.model.Library;
+import csci318demo.repository.AddressRepository;
+import csci318demo.repository.LibraryRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

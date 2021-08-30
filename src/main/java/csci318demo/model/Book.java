@@ -1,4 +1,4 @@
-package com.csci318.demo.model;
+package csci318demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

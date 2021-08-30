@@ -1,4 +1,4 @@
-package com.csci318.demo;
+package csci318demo;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
