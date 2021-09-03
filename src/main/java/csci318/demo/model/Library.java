@@ -14,12 +14,13 @@ public class Library {
     @Column
     private String name;
 
-    // build a one-to-one relationship between
-    // library and address
+    // Build a one-to-one relationship between library and address.
     // other relationships: @ManyToOne, @OneToMany
     @OneToOne
     @JoinColumn(name = "address_id")
     @JsonIgnore
+    // Hide the address field in a library.
+    // This prevents an infinite nesting references of library and address.
     private Address address;
 
     public Library() {};
