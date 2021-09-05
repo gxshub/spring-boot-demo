@@ -16,7 +16,10 @@ public class Library {
 
     // Build a one-to-one relationship between library and address.
     // other relationships: @ManyToOne, @OneToMany
-    @OneToOne
+    // CascadeType.PERSIST: save() or persist() operations cascade to related entities.
+    // Reference of CascadeType:
+    // https://howtodoinjava.com/hibernate/hibernate-jpa-cascade-types/
+    @OneToOne(cascade=CascadeType.PERSIST)
     @JoinColumn(name = "address_id")
     @JsonIgnore
     // Hide the address field in a library.
