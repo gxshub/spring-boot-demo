@@ -5,7 +5,7 @@ This simple project shows an implementation of a one-to-one relationship between
 ### Demonstration: Sample REST Requests
 - Request 1. 
 ```bash
-curl -X POST -H "Content-Type:application/json" -d '{"name":"My Library"}' http://localhost:8080/libraries
+curl -X POST -H "Content-Type:application/json" -d '{"name":"My Library"}' http://localhost:8081/libraries
 ```
 which returns
 ```json
@@ -14,7 +14,7 @@ which returns
 
 - Request 2.
 ```bash
-curl -X POST -H "Content-Type:application/json" -d '{"location":"Main Street nr 5"}' http://localhost:8080/addresses
+curl -X POST -H "Content-Type:application/json" -d '{"location":"Main Street nr 5"}' http://localhost:8081/addresses
 ```
 which returns 
 ```json
@@ -23,7 +23,7 @@ which returns
 
 - Request 3.
 ```bash
-curl -i -X PUT http://localhost:8080/libraries/1/address/2
+curl -i -X PUT http://localhost:8081/libraries/1/address/2
 ```
 which returns
 ```json
@@ -32,7 +32,7 @@ which returns
 
 - Request 4.
 ```bash
-curl -X GET http://localhost:8080/addresses/2
+curl -X GET http://localhost:8081/addresses/2
 ```
 which returns
 ```json
@@ -41,5 +41,5 @@ which returns
 ### Windows CMD
 In Windows, you need to escape additional single or double quotes with a backslash; for example:
 ```bash
-curl -X POST -H "Content-Type:application/json" -d "{\"name\":\"My Library\"}" http://localhost:8080/libraries
+curl -X POST -H "Content-Type:application/json" -d "{\"name\":\"My Library\"}" http://localhost:8081/libraries
 ```
