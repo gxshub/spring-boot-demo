@@ -38,6 +38,7 @@ which returns
 ```json
 {"id":2,"location":"Main Street nr 5","library":{"id":1,"name":"My Library"}}
 ```
+_Note that the value of `"library"` has been updated from `null` to `{"id":1,"name":"My Library"}`._
 ### Windows CMD
 In Windows, you need to escape additional single or double quotes with a backslash; for example:
 ```bash
