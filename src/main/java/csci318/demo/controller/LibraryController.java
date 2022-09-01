@@ -36,6 +36,14 @@ public class LibraryController {
         return libraryRepository.save(newLibrary);
     }
 
+    @PutMapping("/libraries/{id}")
+    Library updateLibraryName(@PathVariable Long id, @RequestBody Library library) {
+        Library library1 = libraryRepository.findById(id)
+                .orElseThrow(RuntimeException::new);
+        library1.setName(library.getName());
+        return libraryRepository.save(library1);
+    }
+
     @PutMapping("/libraries/{id}/address/{addressId}")
     Library updateLibraryAddress(@PathVariable Long id, @PathVariable Long addressId) {
         Library library = libraryRepository.findById(id).orElseThrow(RuntimeException::new);
